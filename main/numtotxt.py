@@ -44,4 +44,3 @@ def inttostr(x):
         s=int2strdef(xs[0])
     return s
 
-print(inttostr(0))
