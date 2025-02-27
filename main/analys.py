@@ -9,11 +9,11 @@ def chech_nums(s):
     cs=''
     last=''
     for i in s:
-        try:
-            cint=int(i)
+        if i.isdigit():
             cs+=i
-        except:
+        else:
             if cs!=''  and i!='.':
+
                 if dotc==False:
                     full=full+ numtotxt.inttostr (int(cs))
                     cs=''
@@ -34,7 +34,7 @@ def chech_nums(s):
                 dotc=True
     return full
 #print(numtotxt.inttostr(3.89))
-a="Stiv Jobs (Steven Paul Jobs) — dunyoga mashhur amerikalik biznesmen, ishlab chiqaruvchi va Apple kompaniyasining asoschilaridan biri bo'lgan. U 1955-yil 24-fevralda San-Fransiskoda tug‘ilgan va 2011-yil 5-oktabrda vafot etgan. Jobs texnologiya va dizayn sohasida katta ta'sir ko'rsatgan shaxs bo'lib, Apple kompaniyasini dunyoning eng muvaffaqiyatli texnologiya brendlaridan biriga aylantirdi."
+a="Stiv Jobs 3.5 (Steven Paul Jobs) — dunyoga mashhur amerikalik biznesmen, ishlab chiqaruvchi va Apple kompaniyasining asoschilaridan biri bo'lgan. U 1955-yil 24-fevralda San-Fransiskoda tug‘ilgan va 2011-yil 5-oktabrda vafot etgan. Jobs texnologiya va dizayn sohasida katta ta'sir ko'rsatgan shaxs bo'lib, Apple kompaniyasini dunyoning eng muvaffaqiyatli texnologiya brendlaridan biriga aylantirdi."
 
 b=a.split()
 
